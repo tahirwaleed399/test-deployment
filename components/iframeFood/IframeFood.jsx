@@ -43,7 +43,7 @@ const IframeFood = () => {
 
         <iframe
   id="food-iframe"
-  src={`foodGallery/FoodGallery.htm`}
+  src={`${window.origin}/foodGallery/FoodGallery.htm`}
   scrolling="yes"
   frameBorder="0"
   allowFullScreen={true}
