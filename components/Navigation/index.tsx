@@ -61,11 +61,11 @@ export const Navigation = ({
   return (
     <nav
       className={
-        'pointer-events-none absolute mx-auto flex  w-full items-center justify-between pl-[8px] custom-container' +
+        'pointer-events-none absolute mx-auto flex  w-full items-center justify-between pl-[8px] pr-[10px] custom-container left-1/2 -translate-x-1/2 ' +
         section
       }
     >
-      <div className="relative font-extrabold text-black">
+      <div className="relative font-extrabold text-black -translate-x-[8px]">
         <Image
           alt="logo"
           height={70}
@@ -122,7 +122,7 @@ export const Navigation = ({
           )}
         >
           <div
-            className={`lang-btn relative cursor-pointer ${isLangBtnHovered ? 'hovered' : ''}`}
+            className={`lang-btn relative -translate-y-[2px] cursor-pointer ${isLangBtnHovered ? 'hovered' : ''}`}
             onClick={() => setLangOpen(!langOpen)}
           >
             <div
@@ -138,7 +138,7 @@ export const Navigation = ({
           </div>
         </Popover>
         <div
-          className={`relative ${section === 'light' ? 'light' : 'dark'} hamburger-container ${navOpen ? 'navOpen' : ''}`}
+          className={`relative ${section === 'light' ? 'light' : 'dark'} hamburger-container  ${navOpen ? 'navOpen' : ''}`}
         >
           <div
             className={`extra-nav absolute  z-20 h-full w-full rounded-full duration-[800ms]`}
@@ -173,11 +173,11 @@ export const Navigation = ({
 
           <div className={`navigation__background ${navOpen ? 'navOpen' : ''}`}>&nbsp;</div>
 
-          <nav className="navigation__nav">
+          <nav className="navigation__nav">  
             <div className="custom-container flex min-h-[130px] items-center justify-between">
               <div></div>
               <div
-                className={`relative ${section === 'light' ? 'light' : 'dark'} hamburger-container ${navOpen ? 'navOpen' : ''}`}
+                className={`relative ${section === 'light' ? 'light' : 'dark'} mr-[29px] hamburger-container ${navOpen ? 'navOpen' : ''}`}
               >
                 <div
                   className={`extra-nav absolute  z-20 h-20 w-20 rounded-full duration-[800ms]`}
