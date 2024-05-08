@@ -3,9 +3,9 @@
   "version": "2.1.0",
   "private": true,
   "scripts": {
-    "start": "next dev",
-    "dev": "cross-env INIT_CWD=$PWD next dev",
-    "build": "npx contentlayer2 build && next build ",
+    "start": "node api.js && next dev",
+    "dev": "node api.js && cross-env INIT_CWD=$PWD next dev",
+    "build": "node api.js && npx contentlayer2 build && next build",
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint --fix --dir pages --dir app --dir components --dir lib --dir layouts --dir scripts",
